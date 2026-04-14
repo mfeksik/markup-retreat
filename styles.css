@@ -1,1 +1,47 @@
-/* Пиши стили тут */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.rating {
+    padding: 20px;
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.star-rating label img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.star-rating label .star-filled {
+    display: none;
+}
+
+.star-rating label .star-empty {
+    display: block;
+}
