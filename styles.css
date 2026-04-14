@@ -45,3 +45,15 @@ body {
 .star-rating label .star-empty {
     display: block;
 }
+
+.star-rating label:hover ~ label {
+    .star-filled {display: block;}
+    .star-empty {display: none;}
+
+}
+
+.star-rating label:hover {
+    .star-filled {display: block;}
+    .star-empty {display: none;}
+
+}
