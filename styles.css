@@ -57,3 +57,13 @@ body {
     .star-empty {display: none;}
 
 }
+
+.star-rating label:has(input:checked) {
+    .star-filled { display: block; }
+    .star-empty { display: none; }
+}
+
+.star-rating label:has(input:checked) ~ label {
+    .star-filled { display: block; }
+    .star-empty { display: none; }
+}
